@@ -1,6 +1,3 @@
-
-
-//src/api/auth.service.js
 import api from "./client";
 
 export const loginApi = async (data) => {

@@ -1,5 +1,3 @@
-
-//src/api/products.service.js
 import api from "./client";
 
 
