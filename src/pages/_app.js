@@ -1,8 +1,11 @@
+
 //next-admin-panel/src/pages/_app.js
+// next-admin-panel/src/pages/_app.js
 import "@/styles/globals.css";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { AuthProvider } from "../context/AuthProvider";
 import AuthGuard from "../components/AuthGuard";
+import { Toaster } from "react-hot-toast"; // 🔹 اضافه کن
 
 const queryClient = new QueryClient();
 
@@ -16,8 +19,9 @@ function MyApp({ Component, pageProps }) {
       <AuthProvider>
         <AuthGuard isProtected={isProtected} isGuestOnly={isGuestOnly}>
           <div dir="rtl" className="font-sans">
-          {getLayout(<Component {...pageProps} />)}
-        </div>
+            {getLayout(<Component {...pageProps} />)}
+            <Toaster position="top-left" reverseOrder={false} /> {/* 🔹 اضافه شد */}
+          </div>
         </AuthGuard>
       </AuthProvider>
     </QueryClientProvider>
