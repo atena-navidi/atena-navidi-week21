@@ -1,5 +1,3 @@
-
-// next-admin-panel/src/components/AuthCard.jsx
 import Link from "next/link";
 import Image from "next/image";
 
@@ -9,15 +7,9 @@ const AuthCard = ({ title, children, linkText, linkTo }) => {
       <h1 className="text-xl font-semibold mb-40">بوت کمپ بوتواستارت</h1>
 
       <div className="bg-white w-full max-w-md p-8 rounded-3xl shadow-sm text-center">
-        
-<Image
-  src="/assets/Union.svg"
-  alt="logo"
-  width={80}
-  height={80}
-  priority // برای LCP
-  style={{ width: "80px", height: "auto" }} // حفظ نسبت تصویر
-/>
+        <div className=" flex items-center justify-center">
+          <Image src="/assets/Union.svg" alt="logo" width={80} height={80} />
+        </div>
 
         <h2 className="text-xl font-medium mt-[62px] mb-6">{title}</h2>
 

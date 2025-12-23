@@ -1,20 +1,16 @@
-
-//next-admin-panel/src/components/DeleteProductModal.jsx
-// next-admin-panel/src/components/DeleteProductModal.jsx
 import Modal from "./Modal";
 import Image from "next/image";
-
 
 const DeleteProductModal = ({ isOpen, onClose, onConfirm }) => {
   return (
     <Modal isOpen={isOpen} onClose={onClose}>
       <div className="text-center">
-        <div className="mx-auto mb-4 w-14 h-14 bg-red-100 rounded-full flex items-center justify-center">
+        <div className="w-full h-full flex items-center justify-center mb-8">
           <Image
             src="/assets/Close.svg"
             alt="close icon"
-            width={24}
-            height={24}
+            width={74}
+            height={74}
           />
         </div>
 
