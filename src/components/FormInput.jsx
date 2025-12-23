@@ -1,5 +1,3 @@
-
-//next-admin-panel/src/components/FormInput.jsx
 const FormInput = ({ label, register, name, type = "text", errors }) => {
   return (
     <div className="mb-3 text-right">

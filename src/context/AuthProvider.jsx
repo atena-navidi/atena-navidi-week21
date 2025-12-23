@@ -1,5 +1,3 @@
-
-//next-admin-panel/src/context/AuthProvider.jsx
 import { createContext, useContext, useEffect, useState } from "react";
 import { loginApi, registerApi } from "../api/auth.service";
 
@@ -30,7 +28,7 @@ export const AuthProvider = ({ children }) => {
   const res = await loginApi(data);
   localStorage.setItem("token", res.token);
 
-  // user را دستی بساز
+  
   const user = { username: data.username };
   localStorage.setItem("user", JSON.stringify(user));
   setUser(user);

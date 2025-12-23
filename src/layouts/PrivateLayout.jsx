@@ -1,7 +1,3 @@
-
-//next-admin-panel/src/layouts/PrivateLayout.jsx
-
-
 const PrivateLayout = ({ children }) => {
   return (
     <div className="flex min-h-screen">

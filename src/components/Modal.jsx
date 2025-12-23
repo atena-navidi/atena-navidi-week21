@@ -1,5 +1,3 @@
-
-//next-admin-panel/src/components/Modal.jsx
 const Modal = ({ isOpen, onClose, children }) => {
   if (!isOpen) return null;
 

@@ -1,5 +1,3 @@
-
-//next-admin-panel/src/components/AuthForm.jsx
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import FormInput from "./FormInput";

@@ -1,5 +1,3 @@
-
-// next-admin-panel/src/components/DashboardHeader.jsx
 import Image from "next/image";
 import { useAuth } from "../context/AuthProvider";
 
@@ -8,8 +6,6 @@ const DashboardHeader = ({ search, setSearch }) => {
 
   const handleLogout = () => {
     logout();
-    // ❌ هیچ redirect ای اینجا نداریم
-    // AuthGuard خودش کاربر را می‌فرستد /login
   };
 
   return (

@@ -1,9 +1,7 @@
-
-//next-admin-panel/src/pages/register.jsx
 import AuthCard from "../components/AuthCard";
 import AuthForm from "../components/AuthForm";
-import { registerSchema } from "../validation/authSchemas";
-import { useAuth } from "../context/AuthContext";
+import { registerSchema } from "../validation/authSchema";
+import { useAuth } from "../context/AuthProvider";
 import toast from "react-hot-toast";
 import { useRouter } from "next/router";
 import PublicLayout from "../layouts/PublicLayout";

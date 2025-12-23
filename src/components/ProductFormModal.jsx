@@ -1,5 +1,3 @@
-
-//next-admin-panel/src/components/ProductFormModal.jsx
 import { useState, useEffect } from "react";
 import Modal from "./Modal";
 

@@ -1,5 +1,3 @@
-
-//next-admin-panel/src/validation/authSchema.js
 import * as yup from "yup";
 
 /* -------------------- Login Schema -------------------- */

@@ -1,5 +1,3 @@
-
-// next-admin-panel/src/pages/products.jsx
 import { useState } from "react";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import toast from "react-hot-toast";
@@ -183,10 +181,10 @@ const Products = () => {
   );
 };
 
-/* 🔐 Guard config */
+
 Products.requiresAuth = true;
 
-/* 🧱 Layout */
+
 Products.getLayout = (page) => <PrivateLayout>{page}</PrivateLayout>;
 
 export default Products;
